@@ -74,3 +74,5 @@ gem 'simple_form'
 gem 'devise'
 
 gem 'solargraph', group: :development
+
+gem 'carrierwave', '>= 2.0.0.rc', '< 3.0'
