@@ -26,4 +26,7 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+#Ignore Application.yml ; It has AWS keys and they keep calling.
+/config/application.yml
+
 
