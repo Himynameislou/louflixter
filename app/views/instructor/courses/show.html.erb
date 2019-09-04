@@ -11,11 +11,11 @@
   </div>
 
 <ul>
-    <% section.lessons.rank(:row_order).each do |lesson| %>
-      <li>
-        <b><%= lesson.title %></b>
-        -
-        <%= lesson.subtitle %>
-      </li>
-    <% end %>
+  <% section.lessons.rank(:row_order).each do |lesson| %>
+    <li>
+      <b><%= lesson.title %></b>
+      -
+      <%= lesson.subtitle %>
+    </li>
+  <% end %>
 </ul>
