@@ -1,6 +1,7 @@
 class Instructor::SectionsController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_course
+  before_action :require_authorized_for_current_course, only: [:create]
+  before_action :require_authorized_for_current_section, only: [:update]
   def new
       @section = Section.new
   end
@@ -20,10 +21,14 @@ class Instructor::SectionsController < ApplicationController
 
   helper_method :current_course
   def current_course
-    @current_course ||= Course.find(params[:course_id])
+    if params[:course_id]
+      @current_course ||= Course.find(params[:course_id])
+    else
+      current_section.course
+    end
   end
 
   def section_params
-    params.require(:section).permit(:title)
+    params.require(:section).permit(:title, :row_order_position)
   end
 end
