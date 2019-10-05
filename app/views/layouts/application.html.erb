@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <link href="http://vjs.zencdn.net/5.12.6/video-js.css" rel="stylesheet">
   </head>
   <body>
     <div id="flex-content-container">
@@ -19,6 +20,9 @@
             </li>
           </ul>
           <ul class="nav navbar-nav float-lg-right">
+            <li class="nav-item">
+              <%= link_to 'My Dashboard', dashboard_path, class: 'nav-link' %>
+            </li>
             <% if user_signed_in? %>
               <li class="nav-item"><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
             <% else %>
@@ -41,11 +45,47 @@
     </div>
 
     <div id="footer">
-      <div class="container">
+      <div class="row">
+      <div class="col-12 col-sm-3">
         <b>Teachers</b>
         <br />
         <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', team_path %>
+        <br />
+        <%= link_to 'Careers', careers_path %>
+        <br />
+        <%= link_to 'Privacy Policy', privacy_path %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        my@email.com
+        <br />
+        One Kendall Square
+        <br />
+        Cambridge MA, 02113
+      </div>
+      <div class="col-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'https://github.com/Himynameislou' do %>
+          <span class="fab fa-github fa-2x social-button"></span>
+        <% end %>
+        <%= link_to 'https://www.linkedin.com/in/luis-vegerano-b7442660' do %>
+          <span class="fab fa-linkedin fa-2x social-button"></span>
+        <% end %>
+        
       </div>
     </div>
+
+    <script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script
   </body>
 </html>

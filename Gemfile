@@ -82,3 +82,13 @@ gem 'figaro'
 gem 'fog-aws'
 
 gem "mini_magick"
+
+gem 'carrierwave-aws'
+
+gem 'stripe'
+
+gem 'ranked-model'
+
+gem 'jquery-ui-rails'
+
+gem 'font-awesome-sass', '~> 5.11.2'
