@@ -1,164 +1,160 @@
 @import "bootstrap";
-@import "font-awesome-sprockets";
 @import "font-awesome";
+@import "font-awesome-sprockets";
+
 .navbar {
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 200;
-    box-shadow: 0px 1px 3px #2a2a2a;
-    background: image_url('dark_wood.png');
-  }
-  
-  .navbar-inverse a.navbar-brand {
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    color: white;
-  }
+  font-family: "Helvetiva Neue", Helvetica;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background: image_url('dark_wood.png');
+  color: white;
+}
 
-  .hero {
-    background: image_url('hero.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 370px;
-    box-shadow: 0px 3px 8px #2a2a2a;
-  }
+.navbar-inverse a.navbar-brand {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  color: white;
+}
 
-  h1, h2, h3, h4, h5, h6, .navbar {
-    margin: 0;
-  }
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
 
-  .frosty {
-    background: rgba(209, 141, 206, 0.1);
-    color: grey;
-  }
+.hero {
+  background: image_url('hero.jpg') no-repeat center center fixed;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 400px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
 
-  .frosty h1 {
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-  }
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
+}
 
-  .frosty h2 {
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 200;
-    text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
-  }
+.frosty {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
 
-  .btn {
-    border-radius: 0;
-  }
+.frosty h1 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  text-shadow: rgba( 0, 0, 0, 0.95) 1px 1px;
+}
 
-  .feature {
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
+.frosty h2 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
 
-  body {
-    background: image_url('white-waves.png');
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-  }
+.btn {
+  border-radius: 0;
+}
 
-  .booyah-box {
-    -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-    -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-    box-shadow: 1px 1px 2px 0 #d0d0d0;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    padding: 10px;
-  }
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 
-  .booyah-box h2, .booyah-box h1 {
-    margin: 10px;
-  }
+body {
+  background: image_url('bg.png');
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
 
-  html {
-    height: 100%;
-  }
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+}
 
-  body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+.booyah-box h2, .booyah-box h1 {
+  margin: 10px;
+}
 
-  #flex-content-container {
-    flex: 1;
-  }
+.help-block {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+  margin: 10px;
+}
 
-  .help-block {
-    color: #ff3333;
-    background-color: #FFEEEE;
-    border-radius: 3px;
-    padding: 2px 8px 2px 8px;
-    margin: 10px;
-  }
+.clr {
+  clear: both;
+}
 
-  .clr {
-    clear: both
-  }
+.lesson {
+  background-color: black;
+  margin-top: 10px;
+  height: 130px;
+}
 
-  .lesson {
-    background-color: black;
-    margin-top: 10px;
-    height: 130px;
-  }
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+}
 
-  .section {
-    border: 1px solid;
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    padding: 20px;
-  }
+.lesson a {
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  font-size: 15px;
+}
 
-  .lesson a {
-    color: white;
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    font-size: 15px;
-  }
+.lesson a b {
+  font-weight: 100;
+  font-size: 25px;
+}
 
-  .lesson a b {
-    font-weight: 100;
-    font-size: 25px;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
+ul {
+  list-style-type: none;
+}
 
-  .section-li {
-    border: 1px solid;
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    padding: 20px;
-    margin: 20px;
-  }
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+  margin: 20px;
+}
 
-  ul .header {
-    font-size: 25px;
-  }
+ul .header {
+  font-size: 25px;
+}
 
-  ul .header .fa {
-    font-size: 20px;
-  }
+ul .header .fa {
+  font-size: 20px;
+}
 
-  lessons li {
-    background: black;
-    color: white;
-    margin: 10px;
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    padding: 8px;
-    font-size: 15px;
-  }
+.lessons li {
+  background: black;
+  color: white;
+  margin: 10px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+}
 
-  .lessons li b {
-    font-size: 25px;
-    font-weight: 100;
-  }
+.lessons li b {
+  font-size: 25px;
+  font-weight: 100;
+}
 
-  .lessons li p {
-    margin: 0;
-  }
-
+.lessons li p {
+  margin: 0;
+}
