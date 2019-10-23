@@ -44,35 +44,4 @@
       <%= @course.description %>
     </div>
   </div>
-<<<<<<< HEAD
-=======
-</div>
-
-<div class="col-12">
-  <% @course.sections.each do |section| %>
-    <br /><br />
-
-      <div class="section text-center">
-        <h3>
-          <%= section.title %>
-        </h3>
-        <div class="row">
-          <% section.lessons.rank(:row_order).each do |lesson| %>
-            <div class="col-12 col-sm-6">
-              <div class="lesson text-center">
-                <br />
-                <%= link_to lesson_path(lesson) do %>
-                  <b><%= lesson.title %></b>
-                  <br />
-                  <%= lesson.subtitle %>
-                <% end %>
-              </div>
-            </div>
-          <% end %>
-        </div>
-        <br class="clr" />
-      </div>
-    <% end %>
-  </div>
->>>>>>> 116346d35c3c9d53f85cbb03f579f82c20b13f26
 </div>
