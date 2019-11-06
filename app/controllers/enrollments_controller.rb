@@ -3,6 +3,9 @@ class EnrollmentsController < ApplicationController
 
   def create
     if current_course.premium?
+      current_user.enrollments.create(course: current_course)
+
+
       # Amount in cents
       @amount = (current_course.cost * 100).to_i
 
@@ -26,11 +29,9 @@ class EnrollmentsController < ApplicationController
     redirect_to root_path
   end
 
-
   private
 
   def current_course
     @current_course ||= Course.find(params[:course_id])
   end
-
 end
